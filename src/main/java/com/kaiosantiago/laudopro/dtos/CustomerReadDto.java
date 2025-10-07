@@ -6,8 +6,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-public class CustomerDto {
-    private UUID uuid;
+public class CustomerReadDto {
     private String fantasyName;
     private String email;
     private String cnpj;

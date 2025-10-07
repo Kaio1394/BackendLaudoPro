@@ -2,11 +2,13 @@ package com.kaiosantiago.laudopro.services;
 
 import com.kaiosantiago.laudopro.dtos.CustomerCreateDto;
 import com.kaiosantiago.laudopro.dtos.CustomerDto;
+import com.kaiosantiago.laudopro.dtos.CustomerReadDto;
 import com.kaiosantiago.laudopro.entity.Customer;
 import com.kaiosantiago.laudopro.repositories.CustomerRepository;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @Service
@@ -15,6 +17,24 @@ public class CustomerService {
 
     public CustomerService(CustomerRepository customerRepository){
         this.customerRepository = customerRepository;
+    }
+
+    @Async
+    public CompletableFuture<List<CustomerReadDto>> getAllCustomersAsync(){
+        var listCustomerDto = this.customerRepository.findAll()
+                .stream().map(customer -> {
+                    CustomerReadDto dto = new CustomerReadDto();
+                    dto.setFantasyName(customer.getFantasyName());
+                    dto.setCnpj(customer.getCnpj());
+                    dto.setCnpjFormated(customer.getCnpjFormated());
+                    dto.setAddress(customer.getAddress());
+                    dto.setEmail(customer.getEmail());
+                    dto.setCreatedAt(customer.getCreatedAt());
+                    dto.setUpdatedAt(customer.getUpdatedAt());
+
+                    return dto;
+                }).toList();
+        return CompletableFuture.completedFuture(listCustomerDto);
     }
 
     @Async
