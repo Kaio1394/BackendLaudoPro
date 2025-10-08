@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Data
 public class CustomerDto {
-    private UUID uuid;
+    private String uuid;
     private String fantasyName;
     private String email;
     private String cnpj;

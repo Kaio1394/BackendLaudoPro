@@ -24,24 +24,18 @@ public class CustomerController {
     }
 
     @PostMapping
-    public CompletableFuture<ApiResponseCreateCustomer> addCustomer(@RequestBody @Valid CustomerCreateDto dto) {
+    public CompletableFuture<ResponseEntity<ApiResponseCreateCustomer>> addCustomer(@RequestBody @Valid CustomerCreateDto dto) {
         ApiResponseCreateCustomer response = new ApiResponseCreateCustomer();
-        try {
-            CompletableFuture<CustomerDto> customer = this.service.createAsync(dto);
-            return customer.thenApply(customerDto -> {
-                response.setCustomer(customerDto);
-                response.setMessage("Created successfully.");
-                return response;
-            }).exceptionally(ex -> {
-                response.setCustomer(null);
-                response.setMessage("Error: " + ex.getMessage());
-                return response;
-            });
-        } catch (Exception e) {
+        CompletableFuture<CustomerDto> customer = this.service.createAsync(dto);
+        return customer.thenApply(customerDto -> {
+            response.setCustomer(customerDto);
+            response.setMessage("Created successfully.");
+            return ResponseEntity.ok(response);
+        }).exceptionally(ex -> {
             response.setCustomer(null);
-            response.setMessage("Unexpected error: " + e.getMessage());
-            return CompletableFuture.completedFuture(response);
-        }
+            response.setMessage("Error: " + ex.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+        });
     }
 
     @GetMapping

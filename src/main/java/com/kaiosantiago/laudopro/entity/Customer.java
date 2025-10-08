@@ -2,10 +2,12 @@ package com.kaiosantiago.laudopro.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.UUID;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "customer")
 public class Customer extends BaseEntity{
