@@ -1,7 +1,7 @@
 package com.kaiosantiago.laudopro.controllers;
 
-import com.kaiosantiago.laudopro.dtos.CustomerCreateDto;
-import com.kaiosantiago.laudopro.dtos.CustomerDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerCreateDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerDto;
 import com.kaiosantiago.laudopro.schemas.ApiResponseCreateCustomer;
 import com.kaiosantiago.laudopro.schemas.ApiResponseGetAllCustomers;
 import com.kaiosantiago.laudopro.services.CustomerService;

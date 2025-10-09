@@ -1,7 +1,7 @@
 package com.kaiosantiago.laudopro.mapper.customer;
 
-import com.kaiosantiago.laudopro.dtos.CustomerDto;
-import com.kaiosantiago.laudopro.dtos.CustomerReadDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerReadDto;
 import com.kaiosantiago.laudopro.entity.Customer;
 
 public class CustomerMapper {
@@ -9,8 +9,6 @@ public class CustomerMapper {
         var dto = new CustomerDto();
         dto.setUuid(customer.getUuid().toString());
         dto.setFantasyName(customer.getFantasyName());
-        dto.setUpdatedAt(customer.getUpdatedAt());
-        dto.setCreatedAt(customer.getCreatedAt());
         dto.setEmail(customer.getEmail());
         dto.setCnpj(customer.getCnpj());
         dto.setCnpjFormated(customer.getCnpjFormated());

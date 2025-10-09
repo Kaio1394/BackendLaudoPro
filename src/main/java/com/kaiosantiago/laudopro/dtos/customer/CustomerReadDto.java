@@ -1,13 +1,11 @@
-package com.kaiosantiago.laudopro.dtos;
+package com.kaiosantiago.laudopro.dtos.customer;
 
 import lombok.Data;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Data
-public class CustomerDto {
-    private String uuid;
+public class CustomerReadDto {
     private String fantasyName;
     private String email;
     private String cnpj;

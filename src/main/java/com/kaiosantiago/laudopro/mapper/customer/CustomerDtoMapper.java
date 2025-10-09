@@ -1,7 +1,7 @@
 package com.kaiosantiago.laudopro.mapper.customer;
 
 import com.kaiosantiago.laudopro.entity.Customer;
-import com.kaiosantiago.laudopro.dtos.CustomerDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerDto;
 
 public class CustomerDtoMapper {
     public static Customer toCustomer(CustomerDto dto){

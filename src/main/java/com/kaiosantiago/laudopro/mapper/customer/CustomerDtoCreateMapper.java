@@ -1,6 +1,6 @@
 package com.kaiosantiago.laudopro.mapper.customer;
 
-import com.kaiosantiago.laudopro.dtos.CustomerCreateDto;
+import com.kaiosantiago.laudopro.dtos.customer.CustomerCreateDto;
 import com.kaiosantiago.laudopro.entity.Customer;
 
 public class CustomerDtoCreateMapper {

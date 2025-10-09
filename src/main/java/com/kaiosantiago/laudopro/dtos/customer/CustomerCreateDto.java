@@ -1,4 +1,4 @@
-package com.kaiosantiago.laudopro.dtos;
+package com.kaiosantiago.laudopro.dtos.customer;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
