@@ -12,6 +12,7 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 @Service
@@ -23,7 +24,7 @@ public class WorkOrderService {
     }
 
     @Async
-    public CompletableFuture<WorkOrderDto> create(WorkOrderCreateDto dtoCreate){
+    public CompletableFuture<WorkOrderDto> createAsync(WorkOrderCreateDto dtoCreate){
         return CompletableFuture.supplyAsync(() -> {
             try{
                 var model = WorkOrderCreateDtoMapper.toWorkOrder(dtoCreate);
@@ -46,5 +47,11 @@ public class WorkOrderService {
                         .map(WorkOrderMapper::toWorkOrderDto)
                         .toList()
         );
+    }
+
+    @Async
+    public CompletableFuture<WorkOrderDto> getWorkOrderByNumber(String workNumber){
+        return CompletableFuture.supplyAsync(() -> this.repository.findByWorkNumber(workNumber).map(WorkOrderMapper::toWorkOrderDto)
+                .orElse(null));
     }
 }

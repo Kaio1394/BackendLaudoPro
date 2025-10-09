@@ -37,6 +37,6 @@ public class WorkOrder{
         this.uuid = UUID.randomUUID();
         this.workNumber = "WO-" + LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE)
                 + "-" +
-                this.getUuid().toString().substring(0, 4).toUpperCase();
+                this.getUuid().toString().substring(0, 8).toUpperCase();
     }
 }

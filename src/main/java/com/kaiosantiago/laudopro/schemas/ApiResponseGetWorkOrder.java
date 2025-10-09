@@ -4,10 +4,8 @@ import com.kaiosantiago.laudopro.dtos.workOrder.WorkOrderDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.util.List;
-
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class ApiResponseGetAllWorkOrders extends ApiResponseBase{
-    private List<WorkOrderDto> listWorkOrder;
+public class ApiResponseGetWorkOrder extends ApiResponseBase{
+    private WorkOrderDto workOrder;
 }

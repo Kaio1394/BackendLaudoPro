@@ -25,13 +25,13 @@ public class CustomerController {
 
     @PostMapping
     public CompletableFuture<ResponseEntity<ApiResponseCreateCustomer>> addCustomer(@RequestBody @Valid CustomerCreateDto dto) {
-        ApiResponseCreateCustomer response = new ApiResponseCreateCustomer();
-        CompletableFuture<CustomerDto> customer = this.service.createAsync(dto);
-        return customer.thenApply(customerDto -> {
+        return this.service.createAsync(dto).thenApply(customerDto -> {
+            ApiResponseCreateCustomer response = new ApiResponseCreateCustomer();
             response.setCustomer(customerDto);
             response.setMessage("Created successfully.");
-            return ResponseEntity.ok(response);
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
         }).exceptionally(ex -> {
+            ApiResponseCreateCustomer response = new ApiResponseCreateCustomer();
             response.setCustomer(null);
             response.setMessage("Error: " + ex.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
@@ -40,12 +40,13 @@ public class CustomerController {
 
     @GetMapping
     public CompletableFuture<ResponseEntity<ApiResponseGetAllCustomers>> getAllCustomers() {
-        ApiResponseGetAllCustomers response = new ApiResponseGetAllCustomers();
         return service.getAllCustomersAsync().thenApply(list -> {
+            ApiResponseGetAllCustomers response = new ApiResponseGetAllCustomers();
             response.setListCustomers(list);
             response.setMessage(null);
-            return ResponseEntity.ok(response);
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
         }).exceptionally(ex -> {
+            ApiResponseGetAllCustomers response = new ApiResponseGetAllCustomers();
             response.setListCustomers(List.of());
             response.setMessage("Error: " + ex.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
