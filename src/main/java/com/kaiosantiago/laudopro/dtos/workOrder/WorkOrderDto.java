@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -14,5 +15,5 @@ public class WorkOrderDto {
     private String workNumber;
     private LocalDateTime calibrationDate;
     private LocalDateTime validateDate;
-    private LocalDateTime issueDate;
+    private LocalDate issueDate;
 }

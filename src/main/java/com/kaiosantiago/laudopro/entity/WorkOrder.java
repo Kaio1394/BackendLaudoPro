@@ -31,7 +31,7 @@ public class WorkOrder{
 
     @CreatedDate
     @Column(nullable = false)
-    private LocalDateTime issueDate;
+    private LocalDate issueDate;
 
     public WorkOrder(){
         this.uuid = UUID.randomUUID();
