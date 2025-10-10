@@ -24,13 +24,20 @@ public class WorkOrder{
     private String workNumber;
 
     @Column
+    private String description;
+
+    @Column
     private LocalDateTime calibrationDate;
 
     @Column
     private LocalDateTime validateDate;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
     @CreatedDate
-    @Column(nullable = false)
+    @Column(nullable = false, updatable = false)
     private LocalDate issueDate;
 
     public WorkOrder(){

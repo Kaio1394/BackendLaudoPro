@@ -6,6 +6,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Entity
@@ -15,8 +18,8 @@ public class User extends BaseEntity{
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false, unique = true)
     @Email
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)
@@ -25,6 +28,9 @@ public class User extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "plan_id")
     private Plan plan;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private List<WorkOrder> workOrders = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "role_id")

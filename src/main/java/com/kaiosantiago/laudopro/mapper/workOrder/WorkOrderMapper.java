@@ -6,6 +6,7 @@ import com.kaiosantiago.laudopro.entity.WorkOrder;
 public class WorkOrderMapper {
     public static WorkOrderDto toWorkOrderDto(WorkOrder model){
         var workOrderDto = new WorkOrderDto();
+        workOrderDto.setDescription(model.getDescription());
         workOrderDto.setWorkNumber(model.getWorkNumber());
         workOrderDto.setUuid(model.getUuid().toString());
         workOrderDto.setCalibrationDate(model.getCalibrationDate());

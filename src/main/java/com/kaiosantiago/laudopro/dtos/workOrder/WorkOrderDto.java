@@ -13,6 +13,7 @@ import java.util.UUID;
 public class WorkOrderDto {
     private String uuid;
     private String workNumber;
+    private String description;
     private LocalDateTime calibrationDate;
     private LocalDateTime validateDate;
     private LocalDate issueDate;

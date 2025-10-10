@@ -6,3 +6,7 @@ INSERT INTO plans (type, price) VALUES
 ('COMPANY_BASIC', 300.0), -- 5 licenses premium
 ('COMPANY_STANDARD', 400.0), -- 10 licenses premium
 ('COMPANY_PREMIUM', 650.0); -- 25 licenses premium
+
+INSERT INTO roles (type) VALUES ('ADMIN');
+INSERT INTO roles (type) VALUES ('TECHNICIAN');
+INSERT INTO roles (type) VALUES ('APPROVER');
