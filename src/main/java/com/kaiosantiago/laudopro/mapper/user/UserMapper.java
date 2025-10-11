@@ -13,9 +13,6 @@ public class UserMapper {
         userDto.setPlanId(user.getPlan().getId());
         userDto.setRoleId(user.getRole().getId());
         userDto.setUuid(user.getUuid().toString());
-
-        var listWorkOrdersDto = user.getWorkOrders().stream().map(WorkOrderMapper::toWorkOrderDto).toList();
-        userDto.setWorkOrders(listWorkOrdersDto);
         return userDto;
     }
 }

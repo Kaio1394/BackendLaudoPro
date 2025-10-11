@@ -1,6 +1,7 @@
 package com.kaiosantiago.laudopro.controllers;
 
-import com.kaiosantiago.laudopro.schemas.ApiResponseGetAllPlans;
+import com.kaiosantiago.laudopro.entity.Plan;
+import com.kaiosantiago.laudopro.schemas.ApiResponseList;
 import com.kaiosantiago.laudopro.services.PlanService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,16 +22,16 @@ public class PlanController {
     }
 
     @GetMapping
-    public CompletableFuture<ResponseEntity<ApiResponseGetAllPlans>> getAll(){
+    public CompletableFuture<ResponseEntity<ApiResponseList<Plan>>> getAll(){
         var future = service.getAll();
         return future.thenApply(list -> {
-            var response = new ApiResponseGetAllPlans();
-            response.setPlans(list);
+            var response = new ApiResponseList<Plan>();
+            response.setList(list);
             response.setMessage(null);
             return ResponseEntity.ok(response);
         }).exceptionally(ex -> {
-            var response = new ApiResponseGetAllPlans();
-            response.setPlans(List.of());
+            var response = new ApiResponseList<Plan>();
+            response.setList(List.of());
             response.setMessage("Error: " + ex.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
         });

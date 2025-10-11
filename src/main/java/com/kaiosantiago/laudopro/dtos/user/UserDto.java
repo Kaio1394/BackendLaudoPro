@@ -14,5 +14,4 @@ public class UserDto {
     private String email;
     private Long planId;
     private Long roleId;
-    private List<WorkOrderDto> workOrders;
 }

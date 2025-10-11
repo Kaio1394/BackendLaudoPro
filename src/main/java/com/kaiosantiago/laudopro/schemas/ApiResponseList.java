@@ -1,11 +1,12 @@
 package com.kaiosantiago.laudopro.schemas;
 
-import com.kaiosantiago.laudopro.dtos.user.UserDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.util.List;
+
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class ApiResponseCreateUser extends ApiResponseBase{
-    private UserDto user;
+public class ApiResponseList<T> extends ApiResponseBase {
+    private List<T> list;
 }
