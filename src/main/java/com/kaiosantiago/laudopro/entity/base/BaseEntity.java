@@ -1,4 +1,4 @@
-package com.kaiosantiago.laudopro.entity;
+package com.kaiosantiago.laudopro.entity.base;
 
 import jakarta.persistence.*;
 import lombok.Data;

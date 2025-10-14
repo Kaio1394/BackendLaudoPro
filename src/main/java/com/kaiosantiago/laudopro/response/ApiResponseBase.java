@@ -1,4 +1,4 @@
-package com.kaiosantiago.laudopro.schemas;
+package com.kaiosantiago.laudopro.response;
 
 import jakarta.persistence.MappedSuperclass;
 import lombok.Data;

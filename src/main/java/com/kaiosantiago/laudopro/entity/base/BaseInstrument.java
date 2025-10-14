@@ -1,5 +1,6 @@
-package com.kaiosantiago.laudopro.entity;
+package com.kaiosantiago.laudopro.entity.base;
 
+import com.kaiosantiago.laudopro.entity.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -7,7 +8,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @MappedSuperclass
 @Data
-public abstract class InstrumentBase extends BaseEntity {
+public abstract class BaseInstrument extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;

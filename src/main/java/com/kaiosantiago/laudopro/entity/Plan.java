@@ -3,7 +3,6 @@ package com.kaiosantiago.laudopro.entity;
 import com.kaiosantiago.laudopro.entity.enums.PlanType;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Data

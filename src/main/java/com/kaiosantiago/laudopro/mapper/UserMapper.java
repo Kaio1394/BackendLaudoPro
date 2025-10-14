@@ -1,12 +1,11 @@
-package com.kaiosantiago.laudopro.mapper.user;
+package com.kaiosantiago.laudopro.mapper;
 
-import com.kaiosantiago.laudopro.dtos.user.UserDto;
+import com.kaiosantiago.laudopro.dtos.response.UserCreateResponse;
 import com.kaiosantiago.laudopro.entity.User;
-import com.kaiosantiago.laudopro.mapper.workOrder.WorkOrderMapper;
 
 public class UserMapper {
-    public static UserDto toUserDto(User user){
-        var userDto = new UserDto();
+    public static UserCreateResponse userToUserCreateResponse(User user){
+        var userDto = new UserCreateResponse();
         userDto.setUuid(user.getUuid().toString());
         userDto.setEmail(user.getEmail());
         userDto.setName(user.getName());

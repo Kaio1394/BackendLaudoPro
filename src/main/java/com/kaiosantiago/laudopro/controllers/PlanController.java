@@ -1,7 +1,7 @@
 package com.kaiosantiago.laudopro.controllers;
 
 import com.kaiosantiago.laudopro.entity.Plan;
-import com.kaiosantiago.laudopro.schemas.ApiResponseList;
+import com.kaiosantiago.laudopro.response.ApiResponseList;
 import com.kaiosantiago.laudopro.services.PlanService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

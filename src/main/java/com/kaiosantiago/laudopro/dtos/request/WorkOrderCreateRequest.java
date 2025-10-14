@@ -1,14 +1,15 @@
-package com.kaiosantiago.laudopro.dtos.workOrder;
+package com.kaiosantiago.laudopro.dtos.request;
 
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
-public class WorkOrderReadDto {
-    private String workNumber;
+public class WorkOrderCreateRequest {
+    private String userId;
     private String description;
     private LocalDateTime calibrationDate;
     private LocalDateTime validateDate;
-    private LocalDateTime issueDate;
+    private LocalDate issueDate;
 }

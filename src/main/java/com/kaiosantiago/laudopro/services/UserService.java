@@ -1,14 +1,12 @@
 package com.kaiosantiago.laudopro.services;
 
-import com.kaiosantiago.laudopro.dtos.user.UserCreateDto;
-import com.kaiosantiago.laudopro.dtos.user.UserDto;
-import com.kaiosantiago.laudopro.entity.Role;
+import com.kaiosantiago.laudopro.dtos.request.UserCreateRequest;
+import com.kaiosantiago.laudopro.dtos.response.UserCreateResponse;
 import com.kaiosantiago.laudopro.entity.User;
 import com.kaiosantiago.laudopro.exceptions.PlanNotExists;
 import com.kaiosantiago.laudopro.exceptions.RoleNotExists;
 import com.kaiosantiago.laudopro.exceptions.UserAlreadyExists;
-import com.kaiosantiago.laudopro.mapper.user.UserCreateDtoMapper;
-import com.kaiosantiago.laudopro.mapper.user.UserMapper;
+import com.kaiosantiago.laudopro.mapper.UserMapper;
 import com.kaiosantiago.laudopro.repositories.PlanRepository;
 import com.kaiosantiago.laudopro.repositories.RoleRepository;
 import com.kaiosantiago.laudopro.repositories.UserRepository;
@@ -31,7 +29,7 @@ public class UserService {
     }
 
     @Async
-    public CompletableFuture<UserDto> addUser(UserCreateDto dtoCreate){
+    public CompletableFuture<UserCreateResponse> addUser(UserCreateRequest dtoCreate){
         var email = dtoCreate.getEmail();
         return CompletableFuture.supplyAsync(() -> {
             var user = repository.findByEmail(email);
@@ -55,22 +53,22 @@ public class UserService {
 
             var resultSaved = repository.save(model);
 
-            return UserMapper.toUserDto(resultSaved);
+            return UserMapper.userToUserCreateResponse(resultSaved);
         });
     }
 
     @Async
-    public CompletableFuture<List<UserDto>> getAll(){
+    public CompletableFuture<List<UserCreateResponse>> getAll(){
         return CompletableFuture.supplyAsync(() ->{
             var listModel = repository.findAll();
-            return listModel.stream().map(UserMapper::toUserDto).toList();
+            return listModel.stream().map(UserMapper::userToUserCreateResponse).toList();
         });
     }
 
     @Async
-    public CompletableFuture<UserDto> getUserByEmail(String email){
+    public CompletableFuture<UserCreateResponse> getUserByEmail(String email){
         return CompletableFuture.supplyAsync(() -> repository.findByEmail(email)
-                .map(UserMapper::toUserDto)
+                .map(UserMapper::userToUserCreateResponse)
                 .orElse(null));
     }
 }

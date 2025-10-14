@@ -1,5 +1,6 @@
 package com.kaiosantiago.laudopro.entity;
 
+import com.kaiosantiago.laudopro.entity.base.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
@@ -14,7 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 @EntityListeners(AuditingEntityListener.class)
-public class User extends BaseEntity{
+public class User extends BaseEntity {
     @Column(nullable = false)
     private String name;
 

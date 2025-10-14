@@ -1,16 +1,12 @@
-package com.kaiosantiago.laudopro.dtos.workOrder;
+package com.kaiosantiago.laudopro.dtos.response;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Data
-public class WorkOrderDto {
+public class WorkOrderCreateResponse {
     private String uuid;
     private String workNumber;
     private String description;

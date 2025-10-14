@@ -1,11 +1,11 @@
-package com.kaiosantiago.laudopro.dtos.customer;
+package com.kaiosantiago.laudopro.dtos.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class CustomerCreateDto {
+public class CustomerCreateRequest {
 
     @NotBlank(message = "Nome fantasia é obrigatório")
     private String fantasyName;

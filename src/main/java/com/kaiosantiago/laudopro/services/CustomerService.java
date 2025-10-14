@@ -1,13 +1,11 @@
 package com.kaiosantiago.laudopro.services;
 
-import com.kaiosantiago.laudopro.dtos.customer.CustomerCreateDto;
-import com.kaiosantiago.laudopro.dtos.customer.CustomerDto;
-import com.kaiosantiago.laudopro.dtos.customer.CustomerReadDto;
+import com.kaiosantiago.laudopro.dtos.request.CustomerCreateRequest;
+import com.kaiosantiago.laudopro.dtos.response.CustomerCreateResponse;
 import com.kaiosantiago.laudopro.entity.Customer;
 import com.kaiosantiago.laudopro.exceptions.CnpjAndCnpjFormatedNotMatchException;
 import com.kaiosantiago.laudopro.exceptions.CustomerAlreadyExistsException;
-import com.kaiosantiago.laudopro.mapper.customer.CustomerDtoCreateMapper;
-import com.kaiosantiago.laudopro.mapper.customer.CustomerMapper;
+import com.kaiosantiago.laudopro.mapper.CustomerMapper;
 import com.kaiosantiago.laudopro.repositories.CustomerRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -30,29 +28,29 @@ public class CustomerService {
     }
 
     @Async
-    public CompletableFuture<List<CustomerDto>> getAllCustomersAsync(){
+    public CompletableFuture<List<CustomerCreateResponse>> getAllCustomersAsync(){
         return CompletableFuture.supplyAsync(() -> {
             var listCustomerDto = this.customerRepository.findAll()
                     .stream().map(customer -> {
-                        return CustomerMapper.toCustomerDto(customer);
+                        return CustomerMapper.customertToCustomerCreateResponse(customer);
                     }).toList();
             return listCustomerDto;
         });
     }
 
     @Async
-    public CompletableFuture<CustomerDto> getCustomerByFantasyName(String fantasyName){
+    public CompletableFuture<CustomerCreateResponse> getCustomerByFantasyName(String fantasyName){
         return CompletableFuture.supplyAsync(() -> {
             var query = entityManager.createQuery("SELECT c FROM Customer c WHERE c.fantasyName = :fantasyName", Customer.class);
             query.setParameter("fantasyName", fantasyName);
 
             var result = query.getResultStream().findFirst().orElse(null);
-            return result != null? CustomerMapper.toCustomerDto(result): null;
+            return result != null? CustomerMapper.customertToCustomerCreateResponse(result): null;
         });
     }
 
     @Async
-    public CompletableFuture<CustomerDto> createAsync(CustomerCreateDto dtoCreate) {
+    public CompletableFuture<CustomerCreateResponse> createAsync(CustomerCreateRequest dtoCreate) {
         return CompletableFuture.supplyAsync(() -> {
             try {
                 String fantasyName = dtoCreate.getFantasyName();
@@ -71,10 +69,10 @@ public class CustomerService {
                     throw new CustomerAlreadyExistsException("Customer already exists with CNPJ [" + cnpj + "].");
                 }
 
-                Customer customer = CustomerDtoCreateMapper.toCustomer(dtoCreate);
+                Customer customer = CustomerMapper.customerCreateRequestToCustomer(dtoCreate);
                 Customer saved = customerRepository.save(customer);
 
-                return CustomerMapper.toCustomerDto(saved);
+                return CustomerMapper.customertToCustomerCreateResponse(saved);
 
             } catch (Exception e) {
                 throw e;

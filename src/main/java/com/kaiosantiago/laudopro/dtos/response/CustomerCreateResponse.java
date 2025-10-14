@@ -1,11 +1,9 @@
-package com.kaiosantiago.laudopro.dtos.customer;
+package com.kaiosantiago.laudopro.dtos.response;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
 @Data
-public class CustomerDto {
+public class CustomerCreateResponse {
     private String uuid;
     private String fantasyName;
     private String email;
