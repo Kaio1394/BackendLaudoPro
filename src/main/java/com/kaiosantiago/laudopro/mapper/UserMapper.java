@@ -7,6 +7,7 @@ public class UserMapper {
     public static UserCreateResponse userToUserCreateResponse(User user){
         var userDto = new UserCreateResponse();
         userDto.setUuid(user.getUuid().toString());
+        userDto.setUsername(user.getUsername());
         userDto.setEmail(user.getEmail());
         userDto.setName(user.getName());
         userDto.setPlanId(user.getPlan().getId());

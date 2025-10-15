@@ -3,6 +3,7 @@ package com.kaiosantiago.laudopro.entity;
 import com.kaiosantiago.laudopro.entity.base.BaseEntity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -23,7 +24,8 @@ public class User extends BaseEntity {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = false)
+    @Size(min = 3, max = 30)
+    @Column(nullable = false, length = 30)
     private String username;
 
     @Column(nullable = false)

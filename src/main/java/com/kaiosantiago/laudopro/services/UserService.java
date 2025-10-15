@@ -34,10 +34,15 @@ public class UserService {
     @Async
     public CompletableFuture<UserCreateResponse> addUser(UserCreateRequest dtoCreate){
         var email = dtoCreate.getEmail();
+        var username = dtoCreate.getUsername();
         return CompletableFuture.supplyAsync(() -> {
             var user = repository.findByEmail(email);
             if(user.isPresent())
                 throw new UserAlreadyExists("User already exists with email " + email);
+
+            user = repository.findByUsername(username);
+            if(user.isPresent())
+                throw new UserAlreadyExists("User already exists with username " + username);
 
             var plan = planRepository.findById(dtoCreate.getPlanId());
             if(plan.isEmpty())
@@ -49,6 +54,7 @@ public class UserService {
 
             var model = new User();
             model.setName(dtoCreate.getName());
+            model.setUsername(dtoCreate.getUsername());
 
             model.setEmail(dtoCreate.getEmail());
             model.setPlan(plan.get());
