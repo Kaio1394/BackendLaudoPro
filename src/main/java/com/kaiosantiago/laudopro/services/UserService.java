@@ -10,6 +10,7 @@ import com.kaiosantiago.laudopro.mapper.UserMapper;
 import com.kaiosantiago.laudopro.repositories.PlanRepository;
 import com.kaiosantiago.laudopro.repositories.RoleRepository;
 import com.kaiosantiago.laudopro.repositories.UserRepository;
+import com.kaiosantiago.laudopro.security.PasswordEncoderConfig;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +22,13 @@ public class UserService {
     private final UserRepository repository;
     private final PlanRepository planRepository;
     private final RoleRepository roleRepository;
+    private final PasswordEncoderConfig passwordEncoderConfig;
 
-    public UserService(UserRepository repository, PlanRepository planRepository, RoleRepository roleRepository) {
+    public UserService(UserRepository repository, PlanRepository planRepository, RoleRepository roleRepository, PasswordEncoderConfig passwordEncoderConfig) {
         this.repository = repository;
         this.planRepository = planRepository;
         this.roleRepository = roleRepository;
+        this.passwordEncoderConfig = passwordEncoderConfig;
     }
 
     @Async
@@ -46,10 +49,14 @@ public class UserService {
 
             var model = new User();
             model.setName(dtoCreate.getName());
-            model.setPassword(dtoCreate.getPassword());
+
             model.setEmail(dtoCreate.getEmail());
             model.setPlan(plan.get());
             model.setRole(role.get());
+
+            String passwordEncrypt = this.passwordEncoderConfig.passwordEncoder().encode(dtoCreate.getPassword());
+
+            model.setPassword(passwordEncrypt);
 
             var resultSaved = repository.save(model);
 
