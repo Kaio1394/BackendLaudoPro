@@ -2,6 +2,7 @@ package com.kaiosantiago.laudopro.services;
 
 import com.kaiosantiago.laudopro.dtos.request.UserCreateRequest;
 import com.kaiosantiago.laudopro.dtos.response.UserCreateResponse;
+import com.kaiosantiago.laudopro.dtos.response.UserResponse;
 import com.kaiosantiago.laudopro.entity.User;
 import com.kaiosantiago.laudopro.exceptions.PlanNotExists;
 import com.kaiosantiago.laudopro.exceptions.RoleNotExists;
@@ -82,6 +83,13 @@ public class UserService {
     public CompletableFuture<UserCreateResponse> getUserByEmail(String email){
         return CompletableFuture.supplyAsync(() -> repository.findByEmail(email)
                 .map(UserMapper::userToUserCreateResponse)
+                .orElse(null));
+    }
+
+    @Async
+    public CompletableFuture<UserResponse> getUserByUsername(String username){
+        return CompletableFuture.supplyAsync(() -> repository.findByUsername(username)
+                .map(UserMapper::userToUserResponse)
                 .orElse(null));
     }
 }
