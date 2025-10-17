@@ -1,4 +1,5 @@
-﻿using LaudoPro.Models;
+﻿using LaudoPro.DTOs;
+using LaudoPro.Models;
 using LaudoPro.Repositories.Interfaces;
 using LaudoPro.Services.Interfaces;
 
@@ -13,9 +14,15 @@ namespace LaudoPro.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<Role>> GetAllRolesAsync()
+        public async Task<IEnumerable<RoleDto>> GetAllAsync()
         {
-            return await _repository.GetAllRolesAsync();
+            var listRoles = await _repository.GetAllAsync();
+            var listDto = listRoles.Select(r => new RoleDto
+            {
+                Id = r.Id,
+                Type = r.Type.ToString(),
+            });
+            return listDto;
         }
     }
 }

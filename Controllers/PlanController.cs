@@ -17,7 +17,7 @@ namespace LaudoPro.Controllers
         [HttpGet("list")]
         public async Task<IActionResult> GetAllPlans()
         {
-            return Ok(await _service.GetAllPlansAsync());
+            return Ok(await _service.GetAllAsync());
         }
     }
 }

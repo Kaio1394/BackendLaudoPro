@@ -1,9 +1,9 @@
-﻿using LaudoPro.Models;
+﻿using LaudoPro.DTOs;
+using LaudoPro.Models;
 
 namespace LaudoPro.Services.Interfaces
 {
-    public interface IPlanService
+    public interface IPlanService : IBaseServiceReadOnly<PlanDto>
     {
-        Task<IEnumerable<Plan>> GetAllPlansAsync();
     }
 }

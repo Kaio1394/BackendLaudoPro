@@ -1,9 +1,9 @@
-﻿using LaudoPro.Models;
+﻿using LaudoPro.DTOs;
+using LaudoPro.Models;
 
 namespace LaudoPro.Services.Interfaces
 {
-    public interface IRoleService
+    public interface IRoleService : IBaseServiceReadOnly<RoleDto>
     {
-        Task<IEnumerable<Role>> GetAllRolesAsync();
     }
 }

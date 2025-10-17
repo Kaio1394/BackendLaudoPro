@@ -2,8 +2,7 @@
 
 namespace LaudoPro.Repositories.Interfaces
 {
-    public interface IRoleRepository
+    public interface IRoleRepository: IRepositoryReadOnly<Role>
     {
-        Task<IEnumerable<Role>> GetAllRolesAsync();
     }
 }

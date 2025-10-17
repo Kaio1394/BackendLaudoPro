@@ -1,9 +1,10 @@
 ﻿using LaudoPro.Models;
+using LaudoPro.Models.Enums;
 
 namespace LaudoPro.Repositories.Interfaces
 {
-    public interface IPlanRepository
+    public interface IPlanRepository : IRepositoryReadOnly<Plan>
     {
-        Task<IEnumerable<Plan>> GetAllPlansAsync();
+        Task<Plan> GetPlanByTypeAsync(int id);
     }
 }

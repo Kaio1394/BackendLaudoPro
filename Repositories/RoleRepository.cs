@@ -5,18 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LaudoPro.Repositories
 {
-    public class RoleRepository : IRoleRepository
+    public class RoleRepository : BaseReadOnlyRepository<Role>, IRoleRepository
     {
-        private readonly LaudoProDbContext _dbContext;
-
-        public RoleRepository(LaudoProDbContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
-
-        public async Task<IEnumerable<Role>> GetAllRolesAsync()
-        {
-            return await _dbContext.Roles.ToListAsync();
-        }
+        public RoleRepository(LaudoProDbContext dbContext) : base(dbContext) { }
     }
 }

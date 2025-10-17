@@ -16,7 +16,7 @@ namespace LaudoPro.Controllers
         [HttpGet("list")]
         public async Task<IActionResult> GetAllRoles()
         {
-            var listRoles = await _service.GetAllRolesAsync();
+            var listRoles = await _service.GetAllAsync();
             return Ok(listRoles);
         }
     }

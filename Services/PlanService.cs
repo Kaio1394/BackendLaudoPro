@@ -1,21 +1,28 @@
-﻿using LaudoPro.Models;
+﻿using LaudoPro.DTOs;
+using LaudoPro.Models;
+using LaudoPro.Models.Enums;
 using LaudoPro.Repositories;
 using LaudoPro.Repositories.Interfaces;
 using LaudoPro.Services.Interfaces;
 
 namespace LaudoPro.Services
 {
-    public class PlanService: IPlanService
+    public class PlanService : IPlanService
     {
-        private readonly IPlanRepository _repository;
-        public PlanService(IPlanRepository repository)
+        private readonly IPlanRepository _planRepository;
+
+        public PlanService(IPlanRepository planRepository)
         {
-            _repository = repository;
+            _planRepository = planRepository;
         }
 
-        public async Task<IEnumerable<Plan>> GetAllPlansAsync()
+        public async Task<IEnumerable<PlanDto>> GetAllAsync()
         {
-            return await _repository.GetAllPlansAsync();
+            var listPlans = await _planRepository.GetAllAsync();
+            var listDto = listPlans.Select(p =>
+                new PlanDto { Id = p.Id, Price = p.Price, Type = p.Type.ToString() }
+            );
+            return listDto;
         }
     }
 }

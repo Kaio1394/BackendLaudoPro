@@ -5,17 +5,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LaudoPro.Repositories
 {
-    public class PlanRepository: IPlanRepository
+    public class PlanRepository: BaseReadOnlyRepository<Plan>, IPlanRepository
     {
-        private readonly LaudoProDbContext _dbContext;
-        public PlanRepository(LaudoProDbContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
+        public PlanRepository(LaudoProDbContext dbContext) : base(dbContext) { }
 
-        public async Task<IEnumerable<Plan>> GetAllPlansAsync()
+        public async Task<Plan?> GetPlanByTypeAsync(int id)
         {
-            return await _dbContext.Plans.ToListAsync();
+            return await _dbContext.Plans
+                                   .FirstOrDefaultAsync(p => p.Id == id);
         }
     }
 }
