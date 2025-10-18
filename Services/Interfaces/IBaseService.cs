@@ -2,11 +2,16 @@
 
 namespace LaudoPro.Services.Interfaces
 {
-    public interface IBaseService<T> where T : class
+    public interface IBaseService<TEntity, TReadDto, TUpdateCreateDto, TDeleteDto> 
+        where TEntity : class
+        where TReadDto : class
+        where TUpdateCreateDto : class
+        where TDeleteDto : class
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T> AddAsync(T entity);
-        Task<T> UpdateAsync(T entity);
-        Task<bool> DeleteAsync(T entity);
+        Task<IEnumerable<TReadDto>> GetAllAsync();
+        Task<TReadDto> AddAsync(TUpdateCreateDto entity);
+        Task<TReadDto> UpdateAsync(TUpdateCreateDto entity);
+        Task<bool> DeleteAsync(TDeleteDto entity);
+        Task<TReadDto> GetByUuidAsync(string uuid);
     }
 }

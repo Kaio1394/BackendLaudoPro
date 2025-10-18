@@ -2,7 +2,7 @@
 using LaudoPro.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace LaudoPro.Repositories
+namespace LaudoPro.Repositories.Base
 {
     public class BaseReadOnlyRepository<T> : IRepositoryReadOnly<T> where T : class
     {

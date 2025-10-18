@@ -6,7 +6,7 @@ namespace LaudoPro.Data
 {
     public class LaudoProDbContext: DbContext
     {
-        //public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Plan> Plans { get; set; }
         public DbSet<Role> Roles { get; set; }
         public LaudoProDbContext(DbContextOptions<LaudoProDbContext> options): base(options) { }

@@ -1,4 +1,5 @@
 using LaudoPro.Data;
+using LaudoPro.DTOs.Mapper;
 using LaudoPro.Repositories;
 using LaudoPro.Repositories.Interfaces;
 using LaudoPro.Services;
@@ -19,8 +20,7 @@ builder.Services.AddDbContext<LaudoProDbContext>(options =>
     options.UseSqlite("Data Source=LaudoPro.db")
 );
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -33,6 +33,9 @@ builder.Services.AddScoped<IPlanService, PlanService>();
 
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddCors(options =>
 {

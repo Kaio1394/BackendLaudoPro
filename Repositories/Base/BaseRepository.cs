@@ -2,7 +2,7 @@
 using LaudoPro.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace LaudoPro.Repositories
+namespace LaudoPro.Repositories.Base
 {
     public class BaseRepository<T> : IRepository<T> where T : class
     {
@@ -36,6 +36,11 @@ namespace LaudoPro.Repositories
         {
             _dbContext.Set<T>().Remove(entity);
             return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        public Task<T> GetByUuidAsync(string uuid)
+        {
+            throw new NotImplementedException();
         }
     }
 }

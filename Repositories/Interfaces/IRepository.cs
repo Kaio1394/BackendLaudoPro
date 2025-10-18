@@ -4,6 +4,7 @@
     {
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> AddAsync(T model);
+        Task<T> GetByUuidAsync(string uuid);
         Task<T> UpdateAsync(T model);
         Task<bool> DeleteAsync(T model);
     }

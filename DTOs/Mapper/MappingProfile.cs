@@ -8,8 +8,9 @@ namespace LaudoPro.DTOs.Mapper
     {
         public MappingProfile()
         {
-            CreateMap<User, CreateUserDto>().ReverseMap();
-            CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<User, UserDeleteDto>().ReverseMap();
+            CreateMap<User, UserRequestDto>().ReverseMap();
+            CreateMap<User, UserReadDto>().ReverseMap();
             CreateMap<Role, RoleDto>().ReverseMap();
         }
     }

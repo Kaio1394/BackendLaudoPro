@@ -1,5 +1,6 @@
 ﻿using LaudoPro.Data;
 using LaudoPro.Models;
+using LaudoPro.Repositories.Base;
 using LaudoPro.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
