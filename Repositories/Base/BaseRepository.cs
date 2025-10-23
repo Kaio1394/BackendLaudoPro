@@ -38,9 +38,14 @@ namespace LaudoPro.Repositories.Base
             return await _dbContext.SaveChangesAsync() > 0;
         }
 
-        public Task<T> GetByUuidAsync(string uuid)
+        public async Task<T?> GetByUuidAsync(string uuid)
         {
-            throw new NotImplementedException();
+            var entity = await _dbContext.Set<T>()
+                .AsQueryable()
+                .FirstOrDefaultAsync(e =>
+                    EF.Property<string>(e, "Uuid") == uuid);
+
+            return entity;
         }
     }
 }

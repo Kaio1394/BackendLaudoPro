@@ -55,9 +55,10 @@ namespace LaudoPro.Services
             return _mapper.Map<IEnumerable<TReadDto>>(dtos);
         }
 
-        public Task<TReadDto> GetByUuidAsync(string uuid)
+        public async Task<TReadDto> GetByUuidAsync(string uuid)
         {
-            throw new NotImplementedException();
+            var list = await _repository.GetByUuidAsync(uuid);
+            return _mapper.Map<TReadDto>(list);
         }
 
         public Task<TReadDto> UpdateAsync(TUpdateCreateDto dto)

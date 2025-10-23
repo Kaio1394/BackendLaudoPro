@@ -29,5 +29,24 @@ namespace LaudoPro.Controllers
                 });
             }       
         }
+
+        [HttpGet("by-uuid")]
+        public async Task<IActionResult> GetUserByUuid([FromHeader] string uuid)
+        {
+            try
+            {
+                if(string.IsNullOrEmpty(uuid))
+                    return BadRequest("Header UUID is required.");
+                var user = await _userService.GetByUuidAsync(uuid);
+                return Ok(user);
+            }
+            catch(Exception e) 
+            {
+                return BadRequest(new
+                {
+                    Error = e.Message
+                });
+            }
+        }
     }
 }
