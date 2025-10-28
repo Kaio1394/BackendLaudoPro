@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaudoPro.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8758f438ed83b472040a27afe1dc69af565321e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaudoPro.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaudoPro.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

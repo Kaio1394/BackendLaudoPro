@@ -15,3 +15,4 @@ C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\La
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\ref\LaudoPro.Infrastructure.dll
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Infrastructure.runtimeconfig.json
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.genruntimeconfig.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.sourcelink.json

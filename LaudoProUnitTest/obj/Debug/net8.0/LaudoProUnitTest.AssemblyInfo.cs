@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaudoProUnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8758f438ed83b472040a27afe1dc69af565321e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaudoProUnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaudoProUnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

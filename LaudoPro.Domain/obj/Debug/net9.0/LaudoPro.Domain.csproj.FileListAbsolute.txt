@@ -9,3 +9,4 @@ C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Domain\obj\Debug\net9.0\LaudoPro.D
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Domain\obj\Debug\net9.0\refint\LaudoPro.Domain.dll
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Domain\obj\Debug\net9.0\LaudoPro.Domain.pdb
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Domain\obj\Debug\net9.0\ref\LaudoPro.Domain.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Domain\obj\Debug\net9.0\LaudoPro.Domain.sourcelink.json

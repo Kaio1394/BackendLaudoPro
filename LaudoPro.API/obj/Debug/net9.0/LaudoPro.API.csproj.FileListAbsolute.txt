@@ -162,3 +162,4 @@ C:\Users\kaios\source\repos\LaudoPro\LaudoPro.API\bin\Debug\net9.0\runtimes\win-
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.API\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.API\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.API\obj\Debug\net9.0\LaudoPro.API.sourcelink.json

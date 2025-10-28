@@ -13,3 +13,4 @@ C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\Laudo
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\refint\LaudoPro.Application.dll
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.pdb
 C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\ref\LaudoPro.Application.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.sourcelink.json
