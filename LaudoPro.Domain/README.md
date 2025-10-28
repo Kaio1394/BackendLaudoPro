@@ -47,9 +47,3 @@ Contribuição
 - Crie migrations no projeto `LaudoPro.Infrastructure`.
 - Adicione testes unitários para novas regras de negócio.
 - Faça PRs pequenos e descreva claramente a alteração.
-
-Precisa de algo específico?
-- Posso gerar um `README` por projeto (`LaudoPro.API`, `LaudoPro.Infrastructure`, `LaudoPro.Domain`) ou criar migrations/SQL para:
-  - índice único em `Tag`,
-  - trigger para proteger `created_at`,
-  - mudanças no mapeamento de herança (TPH ⇄ TPT).
