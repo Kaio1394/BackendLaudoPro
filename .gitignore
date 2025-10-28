@@ -1,4 +1,28 @@
-bin/
-obj/
+# Pastas de build
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
 *.user
-*.vs
+*.suo
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Logs e temporários
+*.log
+*.tlog
+*.tmp
+*.temp
+
+# SQLite local
+*.db
+*.db-journal
+
+# Publish
+publish/
+*.publish.xml
