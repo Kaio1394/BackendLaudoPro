@@ -12,9 +12,10 @@ namespace LaudoPro.Domain.Models.Base
 
         [Column("created_at")]
         [Required]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
 
-        [Column("updated_at")]
+        [Column("updated_at")]       
         public DateTime? UpdatedAt { get; set; }
     }
 }

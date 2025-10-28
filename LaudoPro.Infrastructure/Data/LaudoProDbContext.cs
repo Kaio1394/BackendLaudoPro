@@ -1,6 +1,7 @@
 ﻿
-using LaudoPro.Domain.Models;
 using LaudoPro.Domain.Enums;
+using LaudoPro.Domain.Models;
+using LaudoPro.Domain.Models.Base;
 using Microsoft.EntityFrameworkCore;
 
 namespace LaudoPro.Infrastructure.Data
@@ -15,6 +16,10 @@ namespace LaudoPro.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<BaseInstrument>()
+                        .HasIndex(b => b.Tag)
+                        .IsUnique();
 
             modelBuilder.Entity<Plan>().HasData(
                 new Plan { Id = 1, Type = PlanType.FREE, Price = 0.0 },
