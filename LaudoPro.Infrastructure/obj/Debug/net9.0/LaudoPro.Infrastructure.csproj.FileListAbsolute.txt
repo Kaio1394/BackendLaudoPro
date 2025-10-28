@@ -1,0 +1,17 @@
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Infrastructure.deps.json
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Infrastructure.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Infrastructure.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Domain.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Domain.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.AssemblyInfo.cs
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.B2B8DD2A.Up2Date
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\refint\LaudoPro.Infrastructure.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\ref\LaudoPro.Infrastructure.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\bin\Debug\net9.0\LaudoPro.Infrastructure.runtimeconfig.json
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Infrastructure\obj\Debug\net9.0\LaudoPro.Infrastructure.genruntimeconfig.cache

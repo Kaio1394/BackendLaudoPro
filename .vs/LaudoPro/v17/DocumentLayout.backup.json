@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7ACEA70-D50F-4161-B12D-AF88CCCB3797}|LaudoPro.Domain\\LaudoPro.Domain.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7ACEA70-D50F-4161-B12D-AF88CCCB3797}|LaudoPro.Domain\\LaudoPro.Domain.csproj|solutionrelative:laudopro.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|solutionrelative:laudopro.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31C7B3C-65F4-45F5-8303-A176F8859BFE}|LaudoProUnitTest\\LaudoProUnitTest.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudoprounittest\\base\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31C7B3C-65F4-45F5-8303-A176F8859BFE}|LaudoProUnitTest\\LaudoProUnitTest.csproj|solutionrelative:laudoprounittest\\base\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.api\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|solutionrelative:laudopro.api\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E9A2E6-860F-42C1-B5B7-E59B9946A97B}|LaudoPro.Infrastructure\\LaudoPro.Infrastructure.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.infrastructure\\exec-migrations.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{79E9A2E6-860F-42C1-B5B7-E59B9946A97B}|LaudoPro.Infrastructure\\LaudoPro.Infrastructure.csproj|solutionrelative:laudopro.infrastructure\\exec-migrations.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.api\\laudopro.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66CBDEC2-D655-4D39-8F2F-67EA866D19B9}|LaudoPro.API\\LaudoPro.API.csproj|solutionrelative:laudopro.api\\laudopro.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E9A2E6-860F-42C1-B5B7-E59B9946A97B}|LaudoPro.Infrastructure\\LaudoPro.Infrastructure.csproj|c:\\users\\kaios\\source\\repos\\laudopro\\laudopro.infrastructure\\data\\laudoprodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E9A2E6-860F-42C1-B5B7-E59B9946A97B}|LaudoPro.Infrastructure\\LaudoPro.Infrastructure.csproj|solutionrelative:laudopro.infrastructure\\data\\laudoprodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LaudoPro.Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Domain\\Models\\User.cs",
+              "RelativeToolTip": "LaudoPro.Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:55:24.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoProUnitTest\\Base\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "LaudoProUnitTest\\Base\\UserServiceTest.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoProUnitTest\\Base\\UserServiceTest.cs",
+              "RelativeToolTip": "LaudoProUnitTest\\Base\\UserServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:51:51.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\Program.cs",
+              "RelativeDocumentMoniker": "LaudoPro.API\\Program.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\Program.cs",
+              "RelativeToolTip": "LaudoPro.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:49:58.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlanController.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\Controllers\\PlanController.cs",
+              "RelativeDocumentMoniker": "LaudoPro.API\\Controllers\\PlanController.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\Controllers\\PlanController.cs",
+              "RelativeToolTip": "LaudoPro.API\\Controllers\\PlanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:48:45.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "exec-migrations.ps1",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Infrastructure\\exec-migrations.ps1",
+              "RelativeDocumentMoniker": "LaudoPro.Infrastructure\\exec-migrations.ps1",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Infrastructure\\exec-migrations.ps1",
+              "RelativeToolTip": "LaudoPro.Infrastructure\\exec-migrations.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-28T02:47:12.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LaudoPro.API",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\LaudoPro.API.csproj",
+              "RelativeDocumentMoniker": "LaudoPro.API\\LaudoPro.API.csproj",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.API\\LaudoPro.API.csproj",
+              "RelativeToolTip": "LaudoPro.API\\LaudoPro.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-28T02:46:10.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LaudoProDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Infrastructure\\Data\\LaudoProDbContext.cs",
+              "RelativeDocumentMoniker": "LaudoPro.Infrastructure\\Data\\LaudoProDbContext.cs",
+              "ToolTip": "C:\\Users\\kaios\\source\\repos\\LaudoPro\\LaudoPro.Infrastructure\\Data\\LaudoProDbContext.cs",
+              "RelativeToolTip": "LaudoPro.Infrastructure\\Data\\LaudoProDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T02:41:36.237Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

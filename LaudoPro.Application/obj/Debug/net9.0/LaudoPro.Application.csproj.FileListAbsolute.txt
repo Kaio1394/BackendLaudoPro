@@ -1,0 +1,15 @@
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.csproj.AssemblyReference.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.AssemblyInfoInputs.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.AssemblyInfo.cs
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.csproj.CoreCompileInputs.cache
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\bin\Debug\net9.0\LaudoPro.Application.deps.json
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\bin\Debug\net9.0\LaudoPro.Application.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\bin\Debug\net9.0\LaudoPro.Application.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\bin\Debug\net9.0\LaudoPro.Domain.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\bin\Debug\net9.0\LaudoPro.Domain.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.30EA6E8B.Up2Date
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\refint\LaudoPro.Application.dll
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\LaudoPro.Application.pdb
+C:\Users\kaios\source\repos\LaudoPro\LaudoPro.Application\obj\Debug\net9.0\ref\LaudoPro.Application.dll
