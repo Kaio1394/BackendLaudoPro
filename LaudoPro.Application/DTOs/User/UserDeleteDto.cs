@@ -1,4 +1,6 @@
-﻿namespace LaudoPro.Application.DTOs
+﻿using LaudoPro.Application.Interface;
+
+namespace LaudoPro.Application.DTOs.User
 {
     public class UserDeleteDto : IHasUuid
     {
