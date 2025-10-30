@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace LaudoPro.Domain.Models
 {
     [Table("pressure_gauge")]
-    public class PressureGauge : BaseInstruments
+    public class PressureGauge : BaseInstrument
     {
         [MaxLength(50)]
         [Column("resolution")]

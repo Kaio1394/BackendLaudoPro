@@ -47,3 +47,6 @@ Contribuição
 - Crie migrations no projeto `LaudoPro.Infrastructure`.
 - Adicione testes unitários para novas regras de negócio.
 - Faça PRs pequenos e descreva claramente a alteração.
+
+Iniciar Keycloak
+- nohup ./kc.sh start-dev --http-port=8085 > /home/kaio/keycloak/keycloak.log 2>&1 &

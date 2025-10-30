@@ -17,6 +17,7 @@ namespace LaudoPro.Domain.Models
         
         [Required]
         [MaxLength(20)]
+        [Column("number")]
         public string Number { get; set; }
 
         [Column("calibration_date")]

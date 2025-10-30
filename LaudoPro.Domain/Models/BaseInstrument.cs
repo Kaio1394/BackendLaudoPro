@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LaudoPro.Domain.Models.Base
 {
-    public class BaseInstrument : BaseModel
+    public abstract class BaseInstrument : BaseModel
     {
         [Required]
         [MaxLength(100)]

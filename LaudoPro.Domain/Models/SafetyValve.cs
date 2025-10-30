@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace LaudoPro.Domain.Models
 {
     [Table("safety_valve")]
-    public class SafetyValve : BaseInstruments
+    public class SafetyValve : BaseInstrument
     {
         [Required]
         [MaxLength(50)]
