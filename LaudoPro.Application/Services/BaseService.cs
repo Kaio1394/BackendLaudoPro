@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using LaudoPro.Application.DTOs;
 using LaudoPro.Domain.Interfaces.Repositories;
 using LaudoPro.Application.Base;
+using LaudoPro.Application.Interface;
 
 namespace LaudoPro.Application.Services
 {
