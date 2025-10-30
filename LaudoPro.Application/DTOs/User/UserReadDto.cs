@@ -1,4 +1,4 @@
-﻿namespace LaudoPro.Application.DTOs
+﻿namespace LaudoPro.Application.DTOs.User
 {
     public class UserReadDto
     {

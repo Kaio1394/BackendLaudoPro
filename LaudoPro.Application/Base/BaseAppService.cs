@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using LaudoPro.Application.DTOs;
+using LaudoPro.Application.Interface;
 using LaudoPro.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;

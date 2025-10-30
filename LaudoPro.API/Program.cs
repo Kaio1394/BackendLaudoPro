@@ -33,6 +33,9 @@ builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 
+builder.Services.AddScoped<ISafetyValveRepository, SafetyValveRepository>();
+builder.Services.AddScoped<IPlanService, PlanService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
