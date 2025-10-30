@@ -8,18 +8,21 @@ namespace LaudoPro.Infrastructure.Data
 {
     public class LaudoProDbContext: DbContext
     {
-        public DbSet<User> Users { get; set; }
         public DbSet<Plan> Plans { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<SafetyValve> SafetyValves { get; set; }
+        public DbSet<WorkOrder> WorkOrders { get; set; }
+        public DbSet<PressureGauge> PressureGauges { get; set; }
         public LaudoProDbContext(DbContextOptions<LaudoProDbContext> options): base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<BaseInstrument>()
-                        .HasIndex(b => b.Tag)
-                        .IsUnique();
+            //modelBuilder.Entity<BaseInstrument>()
+            //            .HasIndex(b => b.Tag)
+            //            .IsUnique();
 
             modelBuilder.Entity<Plan>().HasData(
                 new Plan { Id = 1, Type = PlanType.FREE, Price = 0.0 },
