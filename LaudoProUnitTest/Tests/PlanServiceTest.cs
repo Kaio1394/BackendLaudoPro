@@ -5,7 +5,7 @@ using LaudoPro.Domain.Interfaces.Repositories;
 using LaudoPro.Domain.Models;
 using Moq;
 
-namespace LaudoProUnitTest.Base
+namespace LaudoProUnitTest.Tests
 {
     [TestFixture]
     public class PlanServiceTest
